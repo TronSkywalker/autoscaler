@@ -346,7 +346,9 @@ service:
   annotations: {}
   # service.labels -- Labels to add to service
   labels: {}
-  # service.externalIPs -- List of IP addresses at which the service is available. Ref: https://kubernetes.io/docs/user-guide/services/#external-ips.
+ # service.clusterIP --  Internal IP for accessing service. Ref: https://kubernetes.io/docs/concepts/services-networking/service/#choosing-your-own-ip-address.
+  clusterIP: ""
+  # service.externalIPs -- List of IP addresses at which the service is available. Ref: https://kubernetes.io/docs/concepts/services-networking/service/#external-ips.
   externalIPs: []
 
   # service.loadBalancerIP -- IP address to assign to load balancer (if supported).
